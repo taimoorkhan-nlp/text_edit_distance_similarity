@@ -1,34 +1,43 @@
-# text-randomizer (adding noise using Edit distance variants) 
-### Description
-This method aims to introduce noise or corruption into a given text by modifying it using the concept of edit distance. It has 3 implementations of edit distance i.e., simple edit distance, Levenshtein edit distance and Damerau-Levenshtein edit distance. Originally the method measures the difference between two strings by counting the minimum number of single-character edits (insertions, deletions, or substitutions) required to change one string into the other.
+# Edit distance toolkit 
+## Description
+A method offers 3 edit distance variants to find distance (as edits) between two texts. It can be used to estimate how similar or dissimilar two texts representing two dialects of language, definitions of similar concepts across different disciplines or same news from two media sources are. Additionally the method also helps to distor text (using insertion, deletion, substitution and transposition operations) with personal information. It has the following operations:
 
-The method takes a text string as input, which can be a sentence, paragraph, or any other textual data. The user specifies which method to use and how many randomization operations to perform, which determines the degree of noise to be introduced into the text. The method randomly selects a combination of edit operations (insertions, deletions, or substitutions) based on the specified corruption level. For each edit operation, the method randomly selects a character position within the input text string.
-The selected edit operations are applied to the chosen character positions in the input text string. The operations are insertion, deletion, substitution and transposition.
-The method returns the corrupted text string, which now contains the introduced noise.
+- simple edit distance between two texts (at word level)
+- simple edit distance between two texts (at character level)
+- levenshtein edit distance (with substitution cost 2) between two texts (at word level)
+- levenshtein edit distance (with submistution cost 2) between two texts (at character level)
+- damerau-levenshtein edit distance between two texts (at word level)
+- demarau-levenshtein edit distance between two texts (at character level)
+- distorting or randomizing text for given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
-The edit distance metric ensures that the corrupted text remains relatively similar to the original text, while introducing a controlled level of noise. The method can be customized by adjusting the corruption level, the types of edit operations allowed, and the character selection strategy to suit specific use cases or requirements.
+The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
-### Use cases
-This text corruption method can be useful in various applications, such as:
+The method in plain python without any package installation and therefore, preserving the environment or the `requirements.txt` file is not required. Random seeds are defined to have predictable random numbers for reproducibility.
 
-**Data Augmentation:** Introducing controlled noise into text data can help improve the robustness and generalization of machine learning models, particularly in natural language processing tasks like text classification, machine translation, or speech recognition.
-
-**Simulating Noisy Data:** The method can be used to simulate real-world scenarios where text data may be corrupted or contain errors, such as text from social media platforms containing personal/sensitive details.
-
-**Privacy Preservation:** By corrupting text data with a controlled level of noise, this method can potentially be used as a privacy-preserving technique, making it more difficult to recover the original text from the corrupted version.
-
-### Repository Structure
-
-### Keywords
+## Keywords
 edit distance, randomizing text, levenshtein edit distance
 
-### Environmental Setup
-The method has vanilla implementation of the edit distance types mentioned without requiring any additional resources.
+## Use cases
+social science researcher interested in comparing the definitions of terms e.g., reproducibility, transparency etc. across different science disciplines 
 
-### Sample Input
-### Sample Output
+## How to use
+- run jupyter using command `jupyter lab` or `jupyter notebook`
+- execute the notebook cells to call all methods defined in `utils.py` on same texts
 
-### How to Use
+## Sample input (For example to tweets)
+
+```
+tweet1 = "Excited to share our latest research on AI and its impact on social sciences! Leveraging data for better insights"
+tweet2 = "Thrilled about our new findings on how AI transforms social science research. Innovation meets impact!"
+```
+
+## Sample output
+
+```
+simple edit distance at character 71, at word 16
+levenshtein edit distance at character 109, at word 26
+...
+```
 
 ### Contact Details
-Taimoor Khan (taimoor.nlp@gmail.com)
+Taimoor Khan (taimoor.khan@gesis.org)
