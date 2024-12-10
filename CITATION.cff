@@ -4,7 +4,7 @@ authors:
   - family-names: Khan
     given-names: Taimoor
     orcid: 0000-0002-6542-9217
-title: "edit distance"
+title: "text edit distance similarity"
 version: 1.0
 identifiers:
   - type: 
