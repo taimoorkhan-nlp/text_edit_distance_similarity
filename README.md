@@ -22,8 +22,13 @@ edit distance, randomizing text, levenshtein edit distance
 
 
 ## How to use
-- run jupyter using command `jupyter lab` or `jupyter notebook`
-- execute the notebook cells to call all methods defined in `utils.py` on same texts
+```
+>conda create -n edit_distance
+>conda activate edit_distance
+>pip install -r requirements.txt
+>jupyter lab
+execute the notebook cells to call all methods defined in `utils.py` on same texts
+```
 
 ## Sample input (For example to tweets)
 
