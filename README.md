@@ -1,14 +1,13 @@
 # Edit distance toolkit 
 ## Description
-A method offers 3 edit distance variants to find distance (as edits) between two texts. It can be used to estimate how similar or dissimilar two texts representing two dialects of language, definitions of similar concepts across different disciplines or same news from two media sources are. Additionally the method also helps to distor text (using insertion, deletion, substitution and transposition operations) with personal information. It has the following operations:
+Edit distance is a sequence comparison method that can be used to compare two text samples for their similarity or dissimilarity. It operates on the principle of minimum edits (changes) needed to transform source text into target text. It can be used for finding edit distance between two text samples representing the same message in two dialects, languages, same news across different posts on social media or definitions of the same/similar terms across different disciplines. 
 
-- simple edit distance between two texts (at word level)
-- simple edit distance between two texts (at character level)
-- levenshtein edit distance (with substitution cost 2) between two texts (at word level)
-- levenshtein edit distance (with submistution cost 2) between two texts (at character level)
-- damerau-levenshtein edit distance between two texts (at word level)
-- demarau-levenshtein edit distance between two texts (at character level)
-- distorting or randomizing text for given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
+The method offers 3 edit distance variants i.e., Simple edit distance, Levenshtein edit distance and Damerau-levenshtein edit distance. It uses insertion, deletion, substitution and transposition operations depending on the variant used. The method operates at both word and character levels.
+
+- Simple edit distance between two texts (at word and char level)
+- Levenshtein edit distance between two texts (at word and char level)
+- Damerau-levenshtein edit distance between two texts (at word and char level)
+- *Bonus:* Distorting or randomizing text for given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
 The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
@@ -18,7 +17,9 @@ The method in plain python without any package installation and therefore, prese
 edit distance, randomizing text, levenshtein edit distance
 
 ## Use cases
-social science researcher interested in comparing the definitions of terms e.g., reproducibility, transparency etc. across different science disciplines 
+- Social science researcher interested in finding the edit distance between a toxic post and its detoxified version
+- social science researcher interested in finding the edit distance among the definitions of terms reproducibility, replicability, reusability, transparency across different science disciplines
+
 
 ## How to use
 - run jupyter using command `jupyter lab` or `jupyter notebook`

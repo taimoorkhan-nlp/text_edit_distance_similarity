@@ -26,7 +26,7 @@ def simple_edit_distance(text1, text2, level='c'):
     return dp[m][n]
 
 # 2. Levenstein edit distance
-def levenstein_edit_distance(text1, text2, level='c'):
+def levenshtein_edit_distance(text1, text2, level='c'):
     if level == 'w':
         text1 = text1.split(' ')
         text2 = text2.split(' ')
@@ -90,27 +90,22 @@ def damerau_levenshtein_distance(text1, text2, level='c'):
     return dp[m][n]
 
 
-def randomize_text(text, level = 'c', revs = 1):
-    if level == 'c':
-        text = text.split(' ')
-        
-    for rev in range(revs):
-        newStr = ''
-        
+def randomize_text(text, revs = 1):
+    for rev in range(revs):        
         op = random.randint(1, 4)
         if op == 1: #insertion
-            newStr = insertion(text)
+            text = insertion(text)
 
         if op == 2: #deletion
-            newStr = deletion(text)
+            text = deletion(text)
         
         if op == 3: #substitution
-            newStr = substitution(text)  
+            text = substitution(text)  
         
         if op == 4: #transposition
-            newStr = transposition(text)            
+            text = transposition(text)            
         
-        return newStr
+    return text
 
 #operations
 def insertion(text):
