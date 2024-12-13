@@ -8,5 +8,5 @@ It is a language agnostic method that compares symbols for edit distance. In thi
 The edit distance working involves, starting from one of the two inputs as source and using the operations available (depending on the edit distance version), it finds out the minimum cost or edit distance to reach the other input i.e., target. 
 
 The following figure shows working of the method, where the optimum path (with least cost) is along the diagonal.
-![alt semantic search design](semantic-search-design.png)
+![alt edit distance](information-13-00452-g002.webp)
 
