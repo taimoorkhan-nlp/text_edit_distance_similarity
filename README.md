@@ -13,7 +13,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 - Distorting or randomizing text for a given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
 - **[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
-- **Reproducibility** The method is not using any external resources and is fully reproducible.
+- **[Reproducibility](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/reproducibility.md):** The method is not installing any packages or resources. It only uses the basic string and random packages usually already included.
 
 The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
