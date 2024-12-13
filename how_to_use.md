@@ -1,5 +1,5 @@
 ## How to use
-- Start the notebook in jupyter and provide the two input strings to find the edit distance between them.
+Start the notebook in jupyter and provide the two input strings to find the edit distance between them.
 
 ## Prerequisites
 The method does not need any speicific setup or installation and is only using basic packages i.e., string and random.
