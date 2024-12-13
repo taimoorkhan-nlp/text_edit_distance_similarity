@@ -22,14 +22,14 @@ The methods prints the output as the word or character level edit distance, depe
 #### Input
 - **Input Query:** Provide two posts/strings as input directly in the notebook to compare.
   
-For example we want to measure the dissimilarity (edit distance) between the two tweets sharing the same news.
+For example we want to measure the dissimilarity (edit distance) between the two tweets sharing the same news:
 ```
 tweet1 = "Excited to share our latest research on AI and its impact on social sciences! Leveraging data for better insights"
 tweet2 = "Thrilled about our new findings on how AI transforms social science research. Innovation meets impact!"
 ```
 #### Output
 - **Output format**: After running the script, the method displays the output as;
-Levenshtein edit distance (at word level) is 26 i.e., tweet1 and tweet2 are 26 word changes apart levenshtein edit distance\
+Levenshtein edit distance (at word level) is 26 i.e., tweet1 and tweet2 are 26 word changes apart using levenshtein edit distance.
 Simple edit distance (at character level) is 71 i.e., tweet1 and tweet2 are 71 character changes apart using simple edit distance.
 ```
 levenshtein edit distance (at word level): 26
