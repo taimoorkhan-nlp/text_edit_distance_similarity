@@ -29,7 +29,8 @@ tweet2 = "Thrilled about our new findings on how AI transforms social science re
 ```
 #### Output
 - **Output format**: After running the script, the method displays the output as;
-For example for calculating the levenshtein edit distance at word level and simple edit distance at the character level are;
+Levenshtein edit distance (at word level) is 26 i.e., tweet1 and tweet2 are 26 word changes apart levenshtein edit distance\
+Simple edit distance (at character level) is 71 i.e., tweet1 and tweet2 are 71 character changes apart using simple edit distance.
 ```
 levenshtein edit distance (at word level): 26
 simple edit distance (at character level): 71
