@@ -1,3 +1,4 @@
+# Reproducibility
 The method provides three edit distance implementations:
 - Simple edit distance: involves 3 operations (insert, delete and subsitute), all having cost 1
 - Levenshtein edit distance: involves 3 operations where (insert and delete) have cost 1, while substitute have cost 2. It is also equivalent to saying that the method allows only insertion and deletion and not substitution.
@@ -6,6 +7,8 @@ The method provides three edit distance implementations:
 It is a language agnostic method that compares symbols for edit distance. In this implementation, the symbols can either be character or word for English.
 
 The edit distance working involves, starting from one of the two inputs as source and using the operations available (depending on the edit distance version), it finds out the minimum cost or edit distance to reach the other input i.e., target. 
+## Random Seed Control
+The method includes predefined random seeds to ensure reproducibility of results across executions.
 
 The following figure shows working of the method, where the optimum path (with least cost) is along the diagonal.
 ![alt edit distance](information-13-00452-g002.webp)
