@@ -8,7 +8,7 @@ This method calculates edit distance between two texts to estimate how similar o
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-levenshtein edit distance__) and has the following operations:
 
 - __Simple edit distance__ between two texts (at word or character level)
-- __Levenshtein edit distance__ [1](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance)(with substitution cost 2) between two texts (at the word or character level)
+- [__Levenshtein edit distance__](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance)(with substitution cost 2) between two texts (at the word or character level)
 - __Damerau-levenshtein edit distance__ between two texts (at the word or character level)
 - Distorting or randomizing text for a given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
