@@ -9,7 +9,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 
 - __Simple edit distance__ between two texts (at word or character level)
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance)(with substitution cost 2) between two texts (at the word or character level)
-- __Damerau-levenshtein edit distance__ between two texts (at the word or character level)
+- [__Damerau-levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) between two texts (at the word or character level)
 - Distorting or randomizing text for a given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
 - **[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
