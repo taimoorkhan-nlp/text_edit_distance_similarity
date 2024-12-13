@@ -1,4 +1,8 @@
-# Text Edit Distance Similarity (Sequence comparison) 
+# Analyzing Text Similarity Using Edit Distance
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/taimoorkhan-nlp/text_edit_distance_similarity/HEAD?labpath=text_edit_distance_similarity.ipynb)
+
+---
 ## Description
 Edit distance is a sequence comparison method that can be used to compare two text samples for their similarity or dissimilarity. It operates on the principle of minimum edits (changes) needed to transform source text into target text. It can be used for finding edit distance between two text samples representing the same message in two dialects, languages, same news across different posts on social media or definitions of the same/similar terms across different disciplines. 
 
