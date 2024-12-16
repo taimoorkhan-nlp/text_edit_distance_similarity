@@ -2,6 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/taimoorkhan-nlp/text_edit_distance_similarity/HEAD?labpath=text_edit_distance_similarity.ipynb)
 
+
 ## Description
 This method calculates the edit distance between two texts to estimate how similar or dissimilar they are. The two texts may represent two dialects of the language, definitions of similar concepts across different disciplines, or the same news from two media sources. Additionally, the method also helps to distort text (using insertion, deletion, substitution, and transposition operations) with personal information.
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-levenshtein edit distance__) and has the following operations:
