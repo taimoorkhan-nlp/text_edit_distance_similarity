@@ -2,7 +2,6 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/taimoorkhan-nlp/text_edit_distance_similarity/HEAD?labpath=text_edit_distance_similarity.ipynb)
 
----
 ## Description
 This method calculates edit distance between two texts to estimate how similar or dissimilar they are. The two texts may be representing two dialects of language, definitions of similar concepts across different disciplines or same news from two media sources are. Additionally the method also helps to distort text (using insertion, deletion, substitution and transposition operations) with personal information.
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-levenshtein edit distance__) and has the following operations:
@@ -10,10 +9,9 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 - __Simple edit distance__ between two texts (at word or character level)
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance) with substitution cost 2 between two texts (at the word or character level)
 - [__Damerau-levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) between two texts (at the word or character level)
-- Distorting or randomizing text for a given number of spins of randomly picked operations (insertion, deletion, substitution and transposition)
 
-- **[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
-- **[Reproducibility](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/reproducibility.md):** The method is not installing any packages or resources. It only uses the basic string and random packages usually already included.
+**[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
+**[Reproducibility](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/reproducibility.md):** The method is not installing any packages or resources. It only uses the basic string and random packages usually already included.
 
 The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
