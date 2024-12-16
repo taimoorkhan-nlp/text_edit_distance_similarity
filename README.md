@@ -19,8 +19,8 @@ The methods are defined in `utils.py` and are called on sample tweets from the n
 The method in plain Python without any package installation and therefore, preserving the environment or the `requirements.txt` file is not required. Random seeds are defined to have predictable random numbers for reproducibility.
 
 ## Use cases
-- identify different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
-- finding tweets/social media posts similar to a certain tweet, sentence, or claim.
+- Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
+- Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
 ## Keywords
 Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein edit distance
