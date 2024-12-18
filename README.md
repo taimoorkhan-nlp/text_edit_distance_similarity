@@ -11,7 +11,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance) with substitution cost 2 between two texts (at the word or character level)
 - [__Damerau-levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) between two texts (at the word or character level)
 
-**[How to Use](#how-to-use):** Detailed instructions for setting up the environment, configuring the method, and running the script.
+**[How to Use]([#how-to-use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md)):** Detailed instructions for setting up the environment, configuring the method, and running the script.
 
 **Reproducibility:** The method does not install any packages or resources. It only uses the basic string and random packages usually already included.
 
