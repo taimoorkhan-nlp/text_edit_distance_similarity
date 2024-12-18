@@ -8,7 +8,7 @@ This method calculates the edit distance between two texts to estimate how simil
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-levenshtein edit distance__) and has the following operations:
 
 - __Simple edit distance__ between two texts (at the word or character level)
-- [__Levenshtein edit distance__](https://www.sciencedirect.com/topics/computer-science/levenshtein-distance) with substitution cost 2 between two texts (at the word or character level)
+- [__Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S0010482523001142) with substitution cost 2 between two texts (at the word or character level)
 - [__Damerau-levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) between two texts (at the word or character level)
 
 **[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
@@ -26,5 +26,9 @@ The method in plain Python without any package installation and therefore, prese
 ## Keywords
 Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein edit distance
 
-### Contact Details
+## Contact Details
 Taimoor Khan (taimoor.khan@gesis.org)
+
+## Publications
+1. Hossain, E., Rana, R., Higgins, N., Soar, J., Barua, P. D., Pisani, A. R., & Turner, K. (2023). Natural language processing in electronic health records in relation to healthcare decision-making: a systematic review. Computers in biology and medicine, 155, 106649.
+2. Chaabi, Y., & Allah, F. A. (2022). Amazigh spell checker using Damerau-Levenshtein algorithm and N-gram. Journal of King Saud University-Computer and Information Sciences, 34(8), 6116-6124.
