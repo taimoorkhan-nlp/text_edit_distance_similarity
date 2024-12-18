@@ -13,7 +13,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 
 **[How to Use](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
 
-**Reproducibility:** The method does not install any packages or resources. It only uses the basic string and random packages usually already included.
+**Reproducibility:** The method does not install any packages or resources. It only uses the basic (string and random) packages usually already included.
 
 The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
