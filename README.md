@@ -37,7 +37,7 @@ For example, we want to measure the dissimilarity (edit distance) between the tw
 ```
 tweet1 = "Excited to share our latest research on AI and its impact on social sciences! Leveraging data for better insights"
 tweet2 = "Thrilled about our new findings on how AI transforms social science research. Innovation meets impact!"
-
+```
 After running the script, the method prints output to the screen as string.
 The output string has the following information
   - `Edit distance version used` from the available implementation versions.
