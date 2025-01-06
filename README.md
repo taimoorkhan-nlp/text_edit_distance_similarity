@@ -5,7 +5,7 @@
 
 ## Description
 This method calculates the edit distance between two texts to estimate how similar or dissimilar they are. The two texts may represent two dialects of the language, definitions of similar concepts across different disciplines, or the same news from two media sources. Additionally, the method also helps to distort text (using insertion, deletion, substitution, and transposition operations) with personal information.
-The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-levenshtein edit distance__) between two texts both at character and word level, and has the following operations:
+The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-Levenshtein edit distance__) between two texts both at character and word level, and has the following operations:
 
 - __Simple edit distance__ i.e., having insertion, deletion and substitution operations, all having cost 1.
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S0010482523001142) i.e., having insertion and deletion with cost 1 and subsitution with cost 2 (it is also equivalent to saying no subsitution allowed)
