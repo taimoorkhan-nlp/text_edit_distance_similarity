@@ -59,7 +59,7 @@ simple edit distance (at character level): 71
 - execute the notebook cells to call all methods defined in `utils.py` on same texts
 
 ## Contact Details
-Taimoor Khan (taimoor.khan@gesis.org)
+Taimoor Khan (<a href=mailto:taimoor.khan@gesis.org>taimoor.khan@gesis.org</a>)
 
 ## Publications
 1. Hossain, E., Rana, R., Higgins, N., Soar, J., Barua, P. D., Pisani, A. R., & Turner, K. (2023). Natural language processing in electronic health records in relation to healthcare decision-making: a systematic review. Computers in biology and medicine, 155, 106649.
