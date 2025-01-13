@@ -15,7 +15,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 ## Keywords
 Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein edit distance
 
-## Science Use Case(s)
+## Use Case(s)
 - Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
 - Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
