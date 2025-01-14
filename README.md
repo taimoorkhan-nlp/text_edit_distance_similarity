@@ -22,7 +22,8 @@ Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein e
 ## Repo Structure
 - [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb)
 - [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py)
-The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
+
+The methods are defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) and are called on sample tweets from the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
 
 ## Environment Setup
 No setup is needed.
