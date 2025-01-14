@@ -20,8 +20,8 @@ Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein e
 - Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
 ## Repo Structure
-- [text_edit_distance_similarity.ipynb](text_edit_distance.ipynb)
-- [utils.py](utils.py)
+- [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb)
+- [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py)
 The methods are defined in `utils.py` and are called on sample tweets from the notebook `text_edit_distance.ipynb`
 
 ## Environment Setup
@@ -31,7 +31,7 @@ No setup is needed.
 Provide the input texts directly in the notebook. The method is directly applicable to textual digital behavioral data from social media and other digital platform.
 
 ## Sample Input and Output
-Provide two posts/strings as input directly in the in the notebook [text_edit_distance_similarity.ipynb](text_edit_distance.ipynb) to compare.
+Provide two posts/strings as input directly in the in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) to compare.
   
 For example, we want to measure the dissimilarity (edit distance) between the two tweets sharing the same news:
 ```
