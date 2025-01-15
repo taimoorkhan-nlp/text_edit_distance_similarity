@@ -57,7 +57,7 @@ simple edit distance (at character level): 71
 - run `pip install jupyter` or `conda install jupyter`, if not installed already
 - run jupyter using the command `jupyter lab` or `jupyter notebook`
 - Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
-- execute the notebook cells to call all methods defined in `utils.py` on same texts
+- execute the notebook cells to call all methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) on same texts
 
 ## Contact Details
 Taimoor Khan (<a href=mailto:taimoor.khan@gesis.org>taimoor.khan@gesis.org</a>)
