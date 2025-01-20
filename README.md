@@ -31,7 +31,7 @@ The methods are defined in [utils.py](https://github.com/taimoorkhan-nlp/text_ed
 No setup is needed.
 
 ## Input Data
-Provide the input texts directly in the notebook. The method is directly applicable to textual digital behavioral data from social media and other digital platforms.
+The method is directly applicable to textual digital behavioral data from social media and other digital platforms. You can provide these input texts directly in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb). 
 
 ## Sample Input and Output
 Provide two posts/strings as input directly in the in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) to compare.
