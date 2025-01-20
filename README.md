@@ -4,7 +4,8 @@
 
 
 ## Description
-This method calculates the edit distance between two texts to estimate how similar or dissimilar they are. The two texts may represent two dialects of the language, definitions of similar concepts across different disciplines, or the same news from two media sources. Additionally, the method also helps to distort text (using insertion, deletion, substitution, and transposition operations) with personal information.
+This method calculates the edit distance between two texts to estimate their similarity or dissimilarity. The edit distance measures how many operations—such as inserting, deleting, or substituting characters—are needed to transform one text into another. For instance, the edit distance between "cut" and "cat" is 1, as only one substitution is needed. Similarly, the distance between "cat" and "at" is also 1, as one deletion suffices. In its simplest form, edit distance assigns an equal cost to all operations—insertions, deletions, and substitutions. Variants of the method allow for different cost structures, making it adaptable to various applications. For example, this method can be used to compare texts like dialects of a language, definitions of similar concepts across disciplines, or even versions of the same news article from different media sources. It can also be applied to anonymize personal information by distorting text.
+
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__ and __Damerau-Levenshtein edit distance__) between two texts both at character and word level, and has the following operations:
 
 - __Simple edit distance__ i.e., having insertion, deletion, and substitution operations, all having cost 1.
