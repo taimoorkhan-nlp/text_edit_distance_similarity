@@ -9,7 +9,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S0010482523001142) i.e., having insertion and deletion with cost 1 and substitution with cost 2 (it is also equivalent to saying no substitution allowed)
 - [__Damerau-Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) i.e., having insertion, deletion, substitution, and transposition, all having equal cost 1.
  
-**Reproducibility:** The method is reproducible as it offers vanilla implementation without requiring any packages or resources to be installed. It only uses the basic (string and random) packages usually already included. It gives full control to update costs and scale as needed. Random seeds are defined to have predictable random numbers for reproducibility.*
+The method is reproducible as it offers vanilla implementation without requiring any packages or resources to be installed. It only uses the basic (string and random) packages usually already included. It gives full control to update costs and scale as needed. Random seeds are defined to have predictable random numbers for reproducibility.*
 
 ## Use Case(s)
 - Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
