@@ -11,26 +11,13 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
  
 **Reproducibility:** The method is reproducible as it offers vanilla implementation without requiring any packages or resources to be installed. It only uses the basic (string and random) packages usually already included. It gives full control to update costs and scale as needed. Random seeds are defined to have predictable random numbers for reproducibility.*
 
-## Keywords
-Edit distance, text similarity, Levenshtein edit distance, Damerau-Levenshtein edit distance
-
 ## Use Case(s)
 - Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
 - Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
-## Repo Structure
-- [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb)
-- [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py)
-
-The methods are defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) and are called on sample tweets from the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
-
-## Environment Setup
-No setup is needed.
-
 ## Input Data
 The method is directly applicable to textual digital behavioral data from social media and other digital platforms. User can provide these input texts to evaluate edit distance by directly writing them in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb). 
 
-## Sample Input and Output
 Provide two posts/strings as input directly in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) to compare.
   
 For example, we want to measure the dissimilarity (edit distance) between the two tweets sharing the same news:
@@ -38,7 +25,8 @@ For example, we want to measure the dissimilarity (edit distance) between the tw
 tweet1 = "Excited to share our latest research on AI and its impact on social sciences! Leveraging data for better insights"
 tweet2 = "Thrilled about our new findings on how AI transforms social science research. Innovation meets impact!"
 ```
-After running the script, the method prints output to the screen as a string.
+
+## Output Data
 The output string has the following information
   - `Edit distance version used` from the available implementation versions.
   - `at word/character level` showing whether the method is applied at word or character level
@@ -51,16 +39,21 @@ Simple edit distance (at character level) is 71 i.e., tweet1 and tweet2 are 71 c
 Levenshtein edit distance (at word level): 26
 simple edit distance (at character level): 71
 ```
+## Hardware
+The method runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+
+## Environment Setup
+The method only uses string and random packages included by default, and therefore doesn't require prior installations.
 
 ## How to Use
 - run `pip install jupyter` or `conda install jupyter`, if not installed already
 - run Jupyter using the command `jupyter lab` or `jupyter notebook`
 - Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
 - execute the notebook cells to call all methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) on the same texts
-
-## Contact Details
-Taimoor Khan (<a href=mailto:taimoor.khan@gesis.org>taimoor.khan@gesis.org</a>)
-
+  
 ## Publications
 1. Hossain, E., Rana, R., Higgins, N., Soar, J., Barua, P. D., Pisani, A. R., & Turner, K. (2023). Natural language processing in electronic health records in relation to healthcare decision-making: a systematic review. Computers in biology and medicine, 155, 106649.
 2. Chaabi, Y., & Allah, F. A. (2022). Amazigh spell checker using the Damerau-Levenshtein algorithm and N-gram. Journal of King Saud University-Computer and Information Sciences, 34(8), 6116-6124.
+
+## Contact Details
+Taimoor Khan (<a href=mailto:taimoor.khan@gesis.org>taimoor.khan@gesis.org</a>)
