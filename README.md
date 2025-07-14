@@ -11,7 +11,7 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
  
 The method is reproducible as it offers vanilla implementation without requiring any packages or resources to be installed. It only uses the basic (string and random) packages usually already included. It gives full control to update costs and scale as needed. Random seeds are defined to have predictable random numbers for reproducibility.*
 
-## Use Case(s)
+## Use Cases
 - Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
 - Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
@@ -40,7 +40,7 @@ Levenshtein edit distance (at word level): 26
 simple edit distance (at character level): 71
 ```
 ## Hardware
-The method runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
 ## Environment Setup
 The method only uses string and random packages included by default, and therefore doesn't require prior installations.
