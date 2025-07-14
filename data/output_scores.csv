@@ -1,0 +1,6 @@
+Text1,Text2,Simple,Levenshtein,Damerau-Levenshtein
+The sun rises in the east,The sun sets in the west,5,5,5
+He likes to play football,He loves to play soccer,9,16,9
+She made a cup of tea,She prepared a cup of coffee,11,15,11
+They visited the museum,They toured the art gallery,15,22,15
+Reading helps improve vocabulary,Reading enhances language skills,22,34,22

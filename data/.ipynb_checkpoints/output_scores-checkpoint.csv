@@ -1,0 +1,6 @@
+text1,text2,simple,levenshtein,damerau levenshtein
+text1,"['The sun rises in the east', 'He likes to play football', 'She made a cup of tea', 'They visited the museum', 'Reading helps improve vocabulary']"
+text2,"['The sun sets in the west', 'He loves to play soccer', 'She prepared a cup of coffee', 'They toured the art gallery', 'Reading enhances language skills']"
+simple,"[5, 9, 11, 15, 22]"
+levenshtein,"[5, 16, 15, 22, 34]"
+damerau levenshtein,"[5, 9, 11, 15, 22]"
