@@ -33,7 +33,7 @@ Levenshtein edit distance (at word level): 26
 simple edit distance (at character level): 71
 ```
 ## Hardware
-The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+The method runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD). with O(k x m x n) time complexity, when the input is 2 column CSV (K=Number of rows).
 
 ## Environment Setup
 The method only uses string and random packages included by default, and therefore doesn't require prior installations.
