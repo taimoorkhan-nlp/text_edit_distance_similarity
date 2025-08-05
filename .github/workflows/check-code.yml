@@ -1,0 +1,63 @@
+name: Python Code Check & Structure Validation
+
+on:
+  push:
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'README.md'
+  pull_request:
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'README.md'
+
+jobs:
+  lint-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pytest
+
+      - name: 🧹 Run flake8 for linting
+        run: |
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+      - name: ✅ Run tests with pytest (if tests exist)
+        run: |
+          if ls tests/test_*.py 1> /dev/null 2>&1; then pytest tests; else echo "No tests found."; fi
+
+      - name: 🧾 Check for required files and README sections
+        run: |
+          echo "Checking for required files..."
+          REQUIRED_FILES=("README.md" "requirements.txt" "main.py" "setup.py")
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing required file: $file"
+              exit 1
+            fi
+          done
+
+          echo "Checking README sections..."
+          REQUIRED_SECTIONS=("## Introduction" "## Installation" "## Usage" "## License")
+          for section in "${REQUIRED_SECTIONS[@]}"; do
+            if ! grep -q "$section" README.md; then
+              echo "❌ Missing section in README.md: $section"
+              exit 1
+            fi
+          done
+
+          echo "✅ All required files and README sections are present."
