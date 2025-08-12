@@ -40,8 +40,8 @@ Execute the following command to install the required packages
 
 ## How to Use
 - Run Jupyter using the command `jupyter lab` or `jupyter notebook`
-- Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
-- Execute the notebook cells to call all methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) on the same texts
+- Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) using the methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py).
+- It reads the input as text pairs from `data/input_text_pairs.csv` and write the output to `data/output_scores.csv` having text pairs along with the edit distances.
 
 **Example usage:**
 - In the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) having method call `results = batch_edit_distance(csv_path='../data/input_text_pairs.csv', method='all', level='c')` provide the name for a specific edit distance method (the default is all methods) and level as 'c' for character level and 'w' for word level distance.
