@@ -1,25 +1,26 @@
 # Analyzing Text Similarity Using Edit Distance
 
 ## Description
-This method calculates the edit distance between two texts to estimate their similarity or dissimilarity. The edit distance measures how many operations — such as inserting, deleting, or substituting characters — are needed to transform one text into another. For instance, Simple edit distance between "cut" and "cat" is 1, as only one substitution is needed. Similarly, Simple distance between "cat" and "at" is also 1, as one deletion suffices. In its simplest form, edit distance assigns an equal cost to all operations — insertions, deletions, and substitutions. Variants of the method allow for different cost structures, making it adaptable to various applications. For example, this method can be used to compare texts like dialects of a language, definitions of similar concepts across disciplines, or even versions of the same news article from different media sources. It can also be applied to anonymize personal information by distorting text.
+This method calculates the edit distance between two texts to estimate their similarity or dissimilarity. The edit distance measures how many operations — such as inserting, deleting, or substituting characters — are needed to transform one text into another with minimum cost. For instance, Simple edit distance between "cut" and "cat" is 1, as only one substitution is needed. Similarly, Simple distance between "cat" and "at" is also 1, as one deletion suffices. In its simplest form, edit distance assigns an equal cost to all operations — insertions, deletions, and substitutions. Variants of the method allow for different cost structures, making it adaptable to various applications. For example, this method can be used to compare texts like dialects of a language, definitions of similar concepts across disciplines, or even versions of the same news article from different media sources. 
 
 ## Use Cases
 - Identifying different mentions of entities (e.g. names like "Donald Trump", "D. Trump", and "Trump")
 - Finding tweets/social media posts similar to a certain tweet, sentence, or claim.
 
 ## Input Data
-The method is directly applicable to textual digital behavioral data from social media and other digital platforms. User can provide these input texts to evaluate edit distance by directly writing them in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb). 
+The method reads the input text pairs from the file `data/input_text_pairs.csv` to compute edit distance for, having the following examples:
 
-Provide two posts/strings as input directly in the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) to compare.
+|       |      |
+|:-----:|:----:|
+| The sun rises in the east |	The sun sets in the west |
+| He likes to play football |	He loves to play soccer |
+| She made a cup of tea	| She prepared a cup of coffee |
+| They visited the museum	| They toured the art gallery |
+| Reading helps improve vocabulary	| Reading enhances language skills |
   
-For example, we want to measure the dissimilarity (edit distance) between the two tweets sharing the same news:
-```
-tweet1 = "Excited to share our latest research on AI and its impact on social sciences! Leveraging data for better insights"
-tweet2 = "Thrilled about our new findings on how AI transforms social science research. Innovation meets impact!"
-```
 
 ## Output Data
-The output data comprises of the text pairs and their distance scores using three variants of edit distance at either word (w) or character (c) levels.
+The output data comprises of the text pairs and their distance scores using the three edit distance cost variants at the character level (word level is the other alternative).
 
 |Text 1| Text 2 | Simple | Levenshtein| Damerau-Levenshtein|
 |------|--------|--------|------------|--------------------|
@@ -29,21 +30,21 @@ The output data comprises of the text pairs and their distance scores using thre
 | They visited the museum	| They toured the art gallery	| 15	| 22	| 15 |
 | Reading helps improve vocabulary	| Reading enhances language skills	| 22	| 34	| 22 |
 
-  - `Edit distance version used` from the available implementation versions.
-  - `At word/character level` showing whether the method is applied at word or character level
-  - `Score (as integer value)` representing the edit distance or cost between the texts, usually interpreted as the minimum edits needed to transform the source text to the target text using the available operations and their costs.
-
 ## Hardware
 The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
 ## Environment Setup
-The method only uses string and random packages included by default, and therefore doesn't require prior installations.
+Execute the following command to install the required packages
+
+`pip install -r requirements.txt`
 
 ## How to Use
-- Run `pip install jupyter` or `conda install jupyter`, if not installed already
 - Run Jupyter using the command `jupyter lab` or `jupyter notebook`
 - Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb).
 - Execute the notebook cells to call all methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py) on the same texts
+
+**Example usage:**
+- In the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) having method call `results = batch_edit_distance(csv_path='../data/input_text_pairs.csv', method='all', level='c')` provide the name for a specific edit distance method (the default is all methods) and level as 'c' for character level and 'w' for word level distance.
 
 ## Technical Details
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__, and __Damerau-Levenshtein edit distance__) between two texts, both at character and word level, and has the following operations:
