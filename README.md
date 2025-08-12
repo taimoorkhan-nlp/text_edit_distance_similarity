@@ -42,9 +42,12 @@ Execute the following command to install the required packages
 - Run Jupyter using the command `jupyter lab` or `jupyter notebook`
 - Open and execute all cells in [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) using the methods defined in [utils.py](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/utils.py).
 - It reads the input as text pairs from `data/input_text_pairs.csv` and write the output to `data/output_scores.csv` having text pairs along with the edit distances.
+- *Optional:* Provide specific method (simple, levenshtein, damerau, default is all) and level (c for character level, w for word level) in the method `batch_edit_distance(csv_path='../data/input_text_pairs.csv', method='all', level='c')`
 
-**Example usage:**
-- In the notebook [text_edit_distance_similarity.ipynb](https://github.com/taimoorkhan-nlp/text_edit_distance_similarity/blob/main/text_edit_distance.ipynb) having method call `results = batch_edit_distance(csv_path='../data/input_text_pairs.csv', method='all', level='c')` provide the name for a specific edit distance method (the default is all methods) and level as 'c' for character level and 'w' for word level distance.
+**Alternately to execute as Python script**
+- `cd src`
+- `jupyter nbconvert --to script text_edit_distance.ipynb` to convert the notebook `text_edit_distance.ipynb` to `text_edit_distance.py` in the directory
+-  `python text_edit_distance.py`
 
 ## Technical Details
 The method offers 3 edit distance variants (__Simple edit distance__, __Levenshtein edit distance__, and __Damerau-Levenshtein edit distance__) between two texts, both at character and word level, and has the following operations:
