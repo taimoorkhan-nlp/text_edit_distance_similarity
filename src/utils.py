@@ -139,7 +139,6 @@ def substitution(text):
 
 def transposition(text):
     loc = random.randint(0, len(text) - 1 - 1)
-    ch = text[loc]
     text = str(text[0:loc] + text[loc + 1] + text[loc] + text[loc + 2 :])
     newText = text
     return newText
