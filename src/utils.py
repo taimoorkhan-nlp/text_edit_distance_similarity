@@ -62,7 +62,7 @@ def damerau_levenshtein_distance(text1, text2, level="c"):
     if level == "w":
         text1 = text1.split(" ")
         text2 = text2.split(" ")
-        
+
     m, n = len(text1), len(text2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
@@ -97,20 +97,20 @@ def damerau_levenshtein_distance(text1, text2, level="c"):
 
 
 def randomize_text(text, revs=1):
-    for rev in range(revs):        
+    for rev in range(revs):
         op = random.randint(1, 4)
         if op == 1:  # insertion
             text = insertion(text)
 
         if op == 2:  # deletion
             text = deletion(text)
-        
+
         if op == 3:  # substitution
-            text = substitution(text)  
-        
+            text = substitution(text)
+
         if op == 4:  # transposition
-            text = transposition(text)            
-        
+            text = transposition(text)
+
     return text
 
 
