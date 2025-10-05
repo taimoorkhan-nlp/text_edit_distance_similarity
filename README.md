@@ -52,7 +52,7 @@ Execute the following command to install the required packages
 - *Optional:* Provide specific method (simple, levenshtein, damerau, default is all) and level (c for character level, w for word level) in the method `batch_edit_distance(csv_path='../data/input_text_pairs.csv', method='all', level='c')`
 
 Alternative: execute as Python script
-```{python}
+```
 cd src
 jupyter nbconvert --to script text_edit_distance.ipynb # convert the notebook to script `text_edit_distance.py`
 python text_edit_distance.py
@@ -76,4 +76,4 @@ The method is reproducible as it offers the vanilla implementation without requi
 
 ## Contact Details
 
-Taimoor Khan (<a href=mailto:taimoor.khan@gesis.org>taimoor.khan@gesis.org</a>)
+Taimoor Khan <taimoor.khan@gesis.org>
