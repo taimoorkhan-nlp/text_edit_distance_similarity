@@ -67,7 +67,9 @@ The method offers 3 edit distance variants (__Simple edit distance__, __Levensht
 - [__Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S0010482523001142) i.e., having insertion and deletion with cost 1 and substitution with cost 2 (it is also equivalent to saying no substitution allowed)
 - [__Damerau-Levenshtein edit distance__](https://www.sciencedirect.com/science/article/pii/S1319157821001828) i.e., having insertion, deletion, substitution, and *transposition*, all having equal cost 1.
  
-The method is reproducible as it offers the vanilla implementation without requiring any packages or resources to be installed. It gives full control to update costs and scale as needed. 
+The method is reproducible as it offers the vanilla implementation without requiring any packages or resources to be installed. It gives full control to update costs and scale as needed. However, for big data processing, there are more efficient libraries e.g., [https://pypi.org/project/editdistance/](https://pypi.org/project/editdistance/) that are much faster.
+
+
 ## Publications
 
 1. Hossain, E., Rana, R., Higgins, N., Soar, J., Barua, P. D., Pisani, A. R., & Turner, K. (2023). Natural language processing in electronic health records in relation to healthcare decision-making: a systematic review. Computers in biology and medicine, 155, 106649.
