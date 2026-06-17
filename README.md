@@ -34,7 +34,7 @@ The method writes an output CSV file with the result for three different edit di
 | They visited the museum	| They toured the art gallery	| 15	| 22	| 15 |
 | Reading helps improve vocabulary	| Reading enhances language skills	| 22	| 34	| 22 |
 
-## Hardware
+## Hardware Requirements
 
 The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
